@@ -141,6 +141,7 @@ if(e==c){
   digitalWrite (led6,LOW);
   digitalWrite (led9,LOW);
   
+  e=0;
   }
   }
   }
