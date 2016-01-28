@@ -1,0 +1,129 @@
+
+
+const int ldr1=A0;
+const int ldr2=A1;
+const int ldr3=A2;
+const int ldr4=A3;
+const int ldr5=A4;
+const int ldr6=A5;
+
+int sensorValue0=0;
+int sensorValue1=0;
+int sensorValue2=0;
+int sensorValue3=0;
+int sensorValue4=0;
+int sensorValue5=0;
+
+int led1= 13;
+int led2= 12;
+int led3= 11;
+int led4= 10;
+int led5= 9;
+int led6= 8;
+int led7= 7;
+int led8= 6;
+int led9= 5;
+void setup() {
+  
+  Serial.begin(9600);
+
+
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
+  pinMode(led4, OUTPUT);
+  pinMode(led5, OUTPUT);
+  pinMode(led6, OUTPUT);
+  pinMode(led7, OUTPUT);
+  pinMode(led8, OUTPUT);
+  pinMode(led9, OUTPUT);
+
+  pinMode(ldr6, INPUT);
+}
+void loop() {
+
+ 
+
+
+/*int sensorValue01=sensorValue0+sensorValue1;
+int sensorValue23=sensorValue2+sensorValue3;
+int sensorValue45=sensorValue4+sensorValue5;
+int sensorValue35=sensorValue3+sensorValue5;
+int sensorValue02=sensorValue0+sensorValue2;
+int sensorValue51=sensorValue5+sensorValue1;*/
+
+int sensorValue03=sensorValue0+sensorValue3; //led1
+int sensorValue04=sensorValue0+sensorValue4; //led2
+int sensorValue05=sensorValue0+sensorValue5; //led3
+
+int sensorValue13=sensorValue1+sensorValue3; //led4
+int sensorValue14=sensorValue1+sensorValue4; //led5
+int sensorValue15=sensorValue1+sensorValue5; //led6
+
+int sensorValue23=sensorValue2+sensorValue3; //led7
+int sensorValue24=sensorValue2+sensorValue4; //led8
+int sensorValue25=sensorValue2+sensorValue5; //led9
+
+if(sensorValue03<25){
+  digitalWrite (led1,HIGH);
+}
+if(sensorValue03>25){
+  digitalWrite (led1,LOW);
+}
+
+if(sensorValue04<25){
+  digitalWrite (led2,HIGH);
+}
+if(sensorValue04>25){
+  digitalWrite (led2,LOW);
+}
+
+if(sensorValue05<25){
+  digitalWrite (led3,HIGH);
+}
+if(sensorValue05>25){
+  digitalWrite (led3,LOW);
+}
+
+if(sensorValue13<25){
+  digitalWrite (led4,HIGH);
+}
+if(sensorValue13>25){
+  digitalWrite (led4,LOW);
+}
+
+if(sensorValue14<25){
+  digitalWrite (led5,HIGH);
+}
+if(sensorValue14>25){
+  digitalWrite (led5,LOW);
+}
+
+if(sensorValue15<25){
+  digitalWrite (led6,HIGH);
+}
+if(sensorValue15>25){
+  digitalWrite (led6,LOW);
+}
+
+if(sensorValue23<25){
+  digitalWrite (led7,HIGH);
+}
+if(sensorValue23>25){
+  digitalWrite (led7,LOW);
+}
+
+if(sensorValue24<25){
+  digitalWrite (led8,HIGH);
+}
+if(sensorValue24>25){
+  digitalWrite (led8,LOW);
+}
+
+if(sensorValue25<25){
+  digitalWrite (led9,HIGH);
+}
+if(sensorValue25>25){
+  digitalWrite (led9,LOW);
+}
+}
