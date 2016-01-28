@@ -1,0 +1,147 @@
+int a=30;
+int b=60;
+int c=90;
+int d;
+int cc;
+int e;
+int f;
+int g;
+int h;
+int i;
+int j;
+int k;
+int l;
+int m;
+int n;
+int o;
+int p;
+int q;
+int r;
+int s;
+int t;
+int u;
+int v;
+int w;
+int y;
+int z=10;
+
+int luz=10;
+
+const int ldr1=A0;
+const int ldr2=A1;
+const int ldr3=A2;
+const int ldr4=A3;
+const int ldr5=A4;
+const int ldr6=A5;
+
+int sensorValue1=0;
+int sensorValue2=0;
+int sensorValue3=0;
+int sensorValue4=0;
+int sensorValue5=0;
+int sensorValue6=0;
+
+int led1= 13;
+int led2= 12;
+int led3= 11;
+int led4= 10;
+int led5= 9;
+int led6= 8;
+int led7= 7;
+int led8= 6;
+int led9= 5;
+
+void setup() {
+
+  Serial.begin(9600);
+}
+
+void loop() {
+
+ /*
+    int sensorValue5 = analogRead(ldr5);
+  Serial.println(sensorValue5);
+  delay(1);      
+
+  */
+d=a;
+if(d==a){
+     sensorValue4 = analogRead(ldr4);
+  Serial.println(sensorValue4);
+  delay(1);
+  
+delay(3000);
+  digitalWrite (led1,HIGH);
+  digitalWrite (led4,HIGH);
+  digitalWrite (led7,HIGH);
+  delay(1500);
+  digitalWrite (led1,LOW);
+  digitalWrite (led4,LOW);
+  digitalWrite (led7,LOW); 
+  
+  if (sensorValue4<luz){
+        
+  digitalWrite (led1,HIGH);
+  digitalWrite (led4,HIGH);
+  digitalWrite (led7,HIGH);
+  delay(1500);
+  digitalWrite (led1,LOW);
+  digitalWrite (led4,LOW);
+  digitalWrite (led7,LOW); 
+
+    e=c;
+    d=0;
+  }
+}
+
+if(e==c){
+  
+     sensorValue4 = analogRead(ldr4);
+  Serial.println(sensorValue4);
+  delay(1);
+
+  delay(1);
+  digitalWrite (led1,HIGH);
+  digitalWrite (led4,HIGH);
+  digitalWrite (led7,HIGH);
+  delay(1500);
+  digitalWrite (led1,LOW);
+  digitalWrite (led4,LOW);
+  digitalWrite (led7,LOW); 
+  
+  digitalWrite (led3,HIGH);
+  digitalWrite (led6,HIGH);
+  digitalWrite (led9,HIGH);
+  delay(1500);
+  digitalWrite (led3,LOW);
+  digitalWrite (led6,LOW);
+  digitalWrite (led9,LOW);
+
+ if (sensorValue4<luz){
+    
+  digitalWrite (led1,HIGH);
+  digitalWrite (led4,HIGH);
+  digitalWrite (led7,HIGH);
+  delay(1500);
+  digitalWrite (led1,LOW);
+  digitalWrite (led4,LOW);
+  digitalWrite (led7,LOW); 
+
+    sensorValue6 = analogRead(ldr6);
+  Serial.println(sensorValue6);
+
+    if(sensorValue6<luz){
+     f=b;
+    
+  digitalWrite (led3,HIGH);
+  digitalWrite (led6,HIGH);
+  digitalWrite (led9,HIGH);
+  delay(1500);
+  digitalWrite (led3,LOW);
+  digitalWrite (led6,LOW);
+  digitalWrite (led9,LOW);
+  
+  }
+  }
+  }
+}
